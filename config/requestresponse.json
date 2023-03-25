@@ -38,7 +38,7 @@
 		"lookupWith": "regex",
 		"lookupValue": "callforward",
         "pause": "100",
-		"callForwardUrl": "http://192.168.1.211:2992/status",
+		"callForwardUrl": "http://192.168.1.122:2992/status",
 		"callForwardType": "GET",
 		"callForwardBody": "test message",
 		"contents": "HTTP/1.1 200 OK\nContent-Length: %Content-Length%\nConnection: close\nContent-Type: %Content-Type%\n\n{\"result\": \"%status%\",\"session\": {\"aes256Key\": \"%AlphaNumer%\",\"updateStatus\": \"NO_UPDATE\",\"authenticationLimit\": 5,\"id\": \"SESSION%sessionId%\",\"version\": \"872ec53701\"},\"merchant\": \"TESTKENOCOM01\"}"
