@@ -1,11 +1,8 @@
 FROM openjdk:19-jdk-alpine
 
-RUN mkdir -p /tmp/gaps
-RUN mkdir -p /tmp/gaps/lib
 RUN mkdir -p /tmp/gaps/config
 
 COPY ./lib/* /tmp/gaps/lib/
-COPY ./config/* /tmp/gaps/config/
 RUN cd /tmp/gaps
 WORKDIR /tmp/gaps
 
